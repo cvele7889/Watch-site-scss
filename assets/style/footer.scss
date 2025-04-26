@@ -1,0 +1,162 @@
+footer {
+    background-color: $ColorGray;
+    padding-top: 5%;
+    .cont {
+      @include lineFlex;
+      .lineLeft {
+        @include line;
+      }
+      .lineRight {
+        @include line;
+      }
+      h2 {
+        font-size: 1.8rem;
+        color: $ColorOrange2;
+        text-align: center;
+      }
+    }
+    form {
+      display: flex;
+      justify-content: center;
+      gap: 13%;
+      @media screen and (max-width: 1200px) {
+        justify-content: space-around;
+        gap: 7%;
+      }
+      @media screen and (max-width: 920px) {
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+        gap: 5vh;
+      }
+      @media screen and (max-width: 480px) {
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+      }
+      .left {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        @media screen and (max-width: 920px) {
+          width: 80%;
+        }
+        input {
+          width: 20vw;
+          height: 8vh;
+          background-color: #9d8f86;
+          color: $ColorOrange2;
+          border: none;
+          padding-left: 5%;
+          padding-top: 1%;
+          font-size: 1.5rem;
+          &::placeholder {
+            color: $ColorOrange2;
+          }
+          @media screen and (max-width: 920px) {
+            width: 49%;
+            height: 6vh;
+          }
+          @media screen and (max-width: 480px) {
+            width: 100%;
+            margin-top: 4%;
+          }
+        }
+        textarea {
+          background-color: #9d8f86;
+          height: 30vh;
+          font-size: 1.5rem;
+          padding: 2%;
+          color: $ColorOrange2;
+          &::placeholder {
+            color: $ColorOrange2;
+          }
+          @media screen and (max-width: 920px) {
+            height: 20vh;
+          }
+        }
+        button {
+          background-color: #dac5b7;
+          border: none;
+          padding: 2% 0;
+          font-size: 1.5rem;
+        }
+      }
+      .right {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        @media screen and (max-width: 1200px) {
+          width: 40vw;
+        }
+        @media screen and (max-width: 920px) {
+          width: 80%;
+          gap: 1rem;
+        }
+        .search {
+          display: flex;
+          gap: 2%;
+          width: 100%;
+          @media screen and (max-width: 920px) {
+            padding-left: 20%;
+          }
+          @media screen and (max-width: 480px) {
+            padding: 0;
+          }
+          input {
+            width: 17vw;
+            height: 6vh;
+            background-color: #9d8f86;
+            color: $ColorOrange2;
+            border: none;
+            padding-left: 5%;
+            font-size: 1.2rem;
+            @media screen and (max-width: 1200px) {
+              width: 40vw;
+            }
+            @media screen and (max-width: 920px) {
+              height: 4vh;
+            }
+            @media screen and (max-width: 480px) {
+              width: 50vw;
+            }
+          }
+          button {
+            background-color: #dac5b7;
+            border: none;
+            padding: 2% 5%;
+            font-size: 1.2rem;
+            width: 15vw;
+            height: 6vh;
+            @media screen and (max-width: 920px) {
+              height: 4vh;
+              width: 10vw;
+              padding: 2%;
+            }
+            @media screen and (max-width: 650px) {
+              width: 20vw;
+            }
+            @media screen and (max-width: 480px) {
+              width: 20vw;
+            }
+          }
+        }
+        .list {
+          background-color: #dac5b7;
+          height: 43vh;
+          width: 100%;
+          @media screen and (max-width: 1200px) {
+            width: 100%;
+            height: 37vh;
+          }
+        }
+      }
+    }
+    p {
+      color: $ColorOrange2;
+      text-align: center;
+      padding-top: 5%;
+      padding-bottom: 2%;
+    }
+  }
+  

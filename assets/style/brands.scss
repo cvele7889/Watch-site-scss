@@ -1,0 +1,75 @@
+.Brands {
+    padding: 5% 0;
+    .brandLine {
+      @include lineFlex;
+      .lineLeft {
+        @include line2;
+      }
+      .lineRight {
+        @include line2;
+      }
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+    .brand {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 5%;
+      padding: 0 5%;
+      .conta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 9vw;
+        padding: 1%;
+        border: 1px solid rgb(209, 207, 207);
+        margin-bottom: 2%;
+        @media screen and (max-width: 1200px) {
+          width: 15vw;
+          padding: 2% 4%;
+        }
+        @media screen and (max-width: 920px) {
+          width: 20vw;
+        }
+        @media screen and (max-width: 480px) {
+          width: 40vw;
+          height: 40vw;
+        }
+        &:nth-child(2) {
+          @media screen and (max-width: 480px) {
+            display: none;
+          }
+        }
+        &:nth-child(4) {
+          @media screen and (max-width: 480px) {
+            display: none;
+          }
+        }
+        &:nth-child(6) {
+          @media screen and (max-width: 480px) {
+            display: none;
+          }
+        }
+        &:nth-child(8) {
+          @media screen and (max-width: 480px) {
+            display: none;
+          }
+        }
+        &:nth-child(10) {
+          @media screen and (max-width: 480px) {
+            display: none;
+          }
+        }
+        &:nth-child(12) {
+          @media screen and (max-width: 480px) {
+            display: none;
+          }
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }

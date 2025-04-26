@@ -1,0 +1,39 @@
+@font-face {
+  // font-family: "Fugaz One", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fugaz+One&display=swap");
+}
+@font-face {
+  // font-family: "Quintessential", serif;
+  src: url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=DM+Serif+Display:ital@0;1&family=Fugaz+One&family=Marcellus&family=Quintessential&display=swap");
+}
+$ColorOrange: #a2786a;
+$ColorOrange2: #d7c3b5;
+$ColorGray: #252525;
+@mixin line {
+  width: 25%;
+  border-bottom: 1px solid white;
+}
+@mixin line2 {
+  width: 25%;
+  border-bottom: 1px solid gray;
+}
+@mixin lineFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4%;
+  gap: 10%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quintessential", serif;
+}
+@import "header";
+@import "nav";
+@import "collection";
+@import "categories";
+@import "newProducts";
+@import "brands";
+@import "footer";

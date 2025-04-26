@@ -1,0 +1,45 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  .info {
+    display: flex;
+    justify-content: space-around;
+    background-color: $ColorGray;
+    color: white;
+    padding: 1vh;
+    font-size: 0.8rem;
+    @media screen and (max-width: 1200px) {
+      justify-content: space-between;
+      padding: 1vh 2vw;
+    }
+    @media screen and (max-width: 720px) {
+      flex-wrap: wrap;
+    }
+    .phone {
+      @media screen and (max-width: 720px) {
+        width: 70%;
+        padding-bottom: 2%;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    .icons {
+      width: 20%;
+      i {
+        padding-left: 3%;
+      }
+      @media screen and (max-width: 720px) {
+        order: 3;
+        width: 100%;
+      }
+    }
+    .logIn {
+      @media screen and (max-width: 720px) {
+        width: 30%;
+      }
+    }
+  }
+}
